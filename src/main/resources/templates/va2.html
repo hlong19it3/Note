@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>CreatedAt</th>
+    <th>UpdatedAt</th>
+  </tr>
+
+    <tr>
+      <td><th:text th:text="${note.id}"></th:text></td>
+      <td><th:text th:text="${note.title}"></th:text></td>
+      <td><th:text th:text="${note.content}"></th:text></td>
+      <td><th:text th:text="${note.createdAt}"></th:text></td>
+      <td><th:text th:text="${note.updatedAt}"></th:text></td>
+    </tr>
+</table>
+</body>
+</html>
