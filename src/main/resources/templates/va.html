@@ -3,16 +3,20 @@
 <html lang="en">
 <head>
     <style>
+        .tieude {
+            text-align: center;
+            color: coral;
+        }
         table, th, td {
             border: 1px solid black;
-            border-radius: 10px;
+            border-collapse: collapse;
         }
     </style>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-va2adadadad
+<h2 class="tieude">Authenine members</h2>
 
 <table style="width:100%">
     <tr>
@@ -29,7 +33,7 @@ va2adadadad
         <td><th:block th:text="${note.title}"></th:block></td>
         <td><th:block th:text="${note.content}"></th:block></td>
         <td><th:block th:text="${note.createdAt}"></th:block></td>
-        <td>ad <th:text th:text="${note.updatedAt}"></th:text></td>
+        <td><th:text th:text="${note.updatedAt}"></th:text></td>
     </tr>
 
 </th:block>
